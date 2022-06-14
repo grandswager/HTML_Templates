@@ -1,4 +1,4 @@
-# grandswager's HTML Template for websites, v1.2.1
+# grandswager's HTML Template for websites, v1.2.1 😉
 
 
 Demo here:
