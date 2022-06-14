@@ -8,14 +8,8 @@ for (i = 0; i < coll.length; i++) {
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
-      coll[i].innerHTML = `
-        Open Collapsible <i class="fas fa-angle-down"></i><br>
-      `;
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
-      coll[i].innerHTML = `
-        Close Collapsible <i class="fas fa-angle-up"></i><br>
-      `;
     }
   });
 }
