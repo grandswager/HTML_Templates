@@ -13,3 +13,27 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+let elements = document.getElementsByTagName("*");
+
+/* Nice fade-in for article */
+for (let element = 0; element < elements.length; element++) {
+elements[element].style.animation = "transition-in .5s ease-in-out forwards";
+  elements[element].style.animationDelay = ".5s";
+ 
+}
+
+let para = document.querySelector("p");
+
+/* Word Count */
+function wordCount(str) {
+  let wordArray = str.split(" ");
+  
+  return "Word Count: " + wordArray.filter(word => word !== "").length;
+}
+
+document.getElementById("word-count").textContent = wordCount(para.textContent);
+
+
+let author = "";
+document.getElementById("author").textContent = author;
