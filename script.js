@@ -32,7 +32,7 @@ function wordCount(str) {
   return "Word Count: " + wordArray.filter(word => word !== "").length;
 }
 
-document.getElementById("word-count").textContent = wordCount(para.textContent);
+document.getElementById("word-count").textContent = wordCount(para.innerText);
 
 
 let author = "";
